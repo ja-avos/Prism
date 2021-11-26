@@ -697,8 +697,8 @@ class _EditProfilePanelState extends State<EditProfilePanel> {
                                       width: 16,
                                       height: 16,
                                       child: CircularProgressIndicator(
-                                        color: Theme.of(context).errorColor,
-                                      ),
+                                          valueColor: AlwaysStoppedAnimation(
+                                              Theme.of(context).errorColor)),
                                     ),
                                   )
                                 : Padding(
@@ -1245,7 +1245,8 @@ class _EditProfilePanelState extends State<EditProfilePanel> {
                         child: Center(
                           child: isLoading
                               ? CircularProgressIndicator(
-                                  color: Theme.of(context).primaryColor)
+                                  valueColor: AlwaysStoppedAnimation(
+                                      Theme.of(context).errorColor))
                               : Text(
                                   "Update",
                                   style: TextStyle(

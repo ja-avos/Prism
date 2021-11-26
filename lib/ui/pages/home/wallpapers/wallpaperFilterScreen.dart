@@ -294,7 +294,8 @@ class _WallpaperFilterScreenState extends State<WallpaperFilterScreen> {
                     width: 20,
                     height: 20,
                     child: CircularProgressIndicator(
-                        color: Theme.of(context).errorColor)),
+                        valueColor: AlwaysStoppedAnimation(
+                            Theme.of(context).errorColor))),
               )
             else
               IconButton(

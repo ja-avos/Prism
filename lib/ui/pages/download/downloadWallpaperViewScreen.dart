@@ -49,11 +49,11 @@ class _DownloadWallpaperScreenState extends State<DownloadWallpaperScreen>
     final Animation<double> offsetAnimation = Tween(begin: 0.0, end: 48.0)
         .chain(CurveTween(curve: Curves.easeOutCubic))
         .animate(shakeController)
-          ..addStatusListener((status) {
-            if (status == AnimationStatus.completed) {
-              shakeController.reverse();
-            }
-          });
+      ..addStatusListener((status) {
+        if (status == AnimationStatus.completed) {
+          shakeController.reverse();
+        }
+      });
     return WillPopScope(
       onWillPop: onWillPop,
       child: Scaffold(
