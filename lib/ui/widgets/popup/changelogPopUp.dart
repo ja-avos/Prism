@@ -46,10 +46,21 @@ void showChangelog(BuildContext context, Function func) {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: const [
+                    ChangeVersion(number: 'v2.6.9'),
+                    Change(
+                        icon: JamIcons.eye,
+                        text: "New splash screen animation."),
+                    Change(
+                        icon: JamIcons.download,
+                        text: "Fix wallpaper download bugs."),
                     ChangeVersion(number: 'v2.6.8'),
                     Change(
                         icon: JamIcons.user,
                         text: "All-new beautiful profile."),
+                    Change(
+                        icon: JamIcons.instant_picture,
+                        text:
+                            "Add icons with a single tap while submitting setups."),
                     Change(
                         icon: JamIcons.link,
                         text: "Add upto 25 links in your profile."),
