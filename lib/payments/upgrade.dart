@@ -16,8 +16,6 @@ import 'package:Prism/logger/logger.dart';
 
 PurchaserInfo? _purchaserInfo;
 
-final String apiKey = '';
-
 Future<void> checkPremium() async {
   appData.isPro = false;
 

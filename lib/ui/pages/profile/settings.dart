@@ -352,6 +352,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       Navigator.pop(context);
                       globals.prismUser.loggedIn = false;
                       main.prefs.put(main.userHiveKey, globals.prismUser);
+                      print("Error Mov: $e");
                       toasts.error("Something went wrong, please try again!");
                     });
                   } else {
